@@ -15,6 +15,7 @@ const ClickerDemo = {
     },
     template:
     `
+    <input v-model="message"> 
     <ClickerButton @clickedTheButton="updateStore" :message="message" />
     `
 }
