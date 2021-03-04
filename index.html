@@ -1,0 +1,21 @@
+<script src="https://unpkg.com/vue@3.0.7/dist/vue.global.js"></script>
+<script src="https://unpkg.com/vue-router@4"></script>
+<script src="https://unpkg.com/vuex@4"></script>
+
+<div id="app">
+    Current Count: {{globalCount}}
+    <ul>
+        <li><router-link to="/">ClickerDemo</router-link></li>
+        <li><router-link to="/About">About</router-link></li>
+    </ul>
+    <router-view></router-view>
+</div>
+
+<script src="./Pages/About.js"></script>
+<script src="./Pages/ClickerDemo.js"></script>
+<script src="./store.js"></script>
+<script src="./main.js" ></script>
+<script src="./components/ClickerButton.js"></script>
+<script>
+    window.vm = app.mount('#app')
+</script>
