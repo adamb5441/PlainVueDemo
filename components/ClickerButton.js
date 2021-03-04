@@ -13,6 +13,6 @@ app.component('ClickerButton', {
     },
     template:
     `
-    <button @click="handleClick()">{{message}}</button>
+    <button class="btn btn-primary" @click="handleClick()">{{message}}</button>
     `
   })
