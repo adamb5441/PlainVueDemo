@@ -1,4 +1,8 @@
-app.component('ClickerButton', {
+<template>
+    <button class="btn btn-primary" @click="handleClick()">{{message}}</button>
+</template>
+<script>
+module.exports = {
     name: 'ClickerButton',
     props: {
         message: {
@@ -10,9 +14,6 @@ app.component('ClickerButton', {
       handleClick(){
         this.$emit("clickedTheButton")
       }
-    },
-    template:
-    `
-    <button class="btn btn-primary" @click="handleClick()">{{message}}</button>
-    `
-  })
+    }
+}
+</script>
